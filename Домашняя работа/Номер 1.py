@@ -7,15 +7,19 @@ n = int(input())
 m = int(input())
 a = []
 d = []
-max = -123
-for w in range(m):
-    x = input().split()
-for s in range(n):
-    d. append(a)
-for h in range(len(d)):
-    for r in range(len(d[h])):
-        d[h][r] = int(d[h][r])
-        if d[h][r]>max:
-            max = d[h][r]
-            print(max)
-print(d.index(max))
+i = 0
+e = 0
+max = -1234
+for x in range(n):
+    a = input().split()
+    d.append(a)
+for r in d:
+    i = i+1
+    for o in r:
+        e = e+1
+        o = int(o)
+        if o > max:
+            max = o
+            l = i
+            p = e
+print(max,l,p)

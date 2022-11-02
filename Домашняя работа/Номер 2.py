@@ -6,14 +6,13 @@
 # Выведи полученный массив на экран, разделяя элементы массива пробелами.
 
 n = int(input())
-d = []
 a = []
 for x in range(n):
-    a.append('.')
-for y in range(n):
-    d.append(a)
-for i in d:
-    for o in i:
-        o = '*'
-for e in d:
+    a.append(['.']*n)
+for i in range(n):
+    a[i][i] = '*'
+    a[n//2][i] = '*'
+    a[i][n//2] = '*'
+    a[i][(n-i)-1]= '*'
+for e in a:
     print((' '.join(e)))
